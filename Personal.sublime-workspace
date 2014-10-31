@@ -1,0 +1,1240 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"json",
+				"json"
+			],
+			[
+				"arr",
+				"array_slice"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"canti",
+				"cantidad"
+			],
+			[
+				"array_s",
+				"array_shift"
+			],
+			[
+				"cant",
+				"cantidad"
+			],
+			[
+				"cantidad",
+				"cantidades"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"idA",
+				"idAgenteLicencia"
+			],
+			[
+				"ret",
+				"retorno"
+			],
+			[
+				"form",
+				"format"
+			],
+			[
+				"start",
+				"startDate"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"Date",
+				"DateTime"
+			],
+			[
+				"new",
+				"newDate"
+			],
+			[
+				"star",
+				"starDate"
+			],
+			[
+				"total",
+				"totalsc"
+			],
+			[
+				"usu",
+				"usufructuados"
+			],
+			[
+				"false",
+				"FALSE"
+			],
+			[
+				"obtener",
+				"obtenerUno"
+			],
+			[
+				"idAgen",
+				"idAgenteLicencia"
+			],
+			[
+				"nombre",
+				"nombreCompletoPersona"
+			],
+			[
+				"Licenc",
+				"Licencia"
+			],
+			[
+				"idAgent",
+				"idAgente"
+			],
+			[
+				"idAgente",
+				"idAgenteLicencia"
+			],
+			[
+				"desde",
+				"desdeAgenteLicencia"
+			],
+			[
+				"idAge",
+				"idAgente"
+			],
+			[
+				"hasta",
+				"hastaAgenteLicencia"
+			],
+			[
+				"licec",
+				"licencias"
+			],
+			[
+				"licenc",
+				"licencias"
+			],
+			[
+				"tab",
+				"table"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"ag",
+				"agente"
+			],
+			[
+				"obtene",
+				"obtenerUno"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"vc",
+				"vcBuscar"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"gene",
+				"generales"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"param",
+				"params"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"cur_",
+				"cur_tag_close"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"anch",
+				"anchor_class"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"switch",
+				"switch1"
+			],
+			[
+				"tipoAc",
+				"tipoActuacionSel"
+			],
+			[
+				"ba",
+				"band"
+			],
+			[
+				"main",
+				"main_content"
+			],
+			[
+				"act",
+				"actuaciones"
+			],
+			[
+				"Actu",
+				"Actuaciones"
+			],
+			[
+				"idActuac",
+				"idActuacion"
+			],
+			[
+				"idAc",
+				"idActuacion"
+			],
+			[
+				"popup",
+				"popup-head"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"list-sty",
+				"list-style-position"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"MARG",
+				"margin-bottom"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"load",
+				"load_library	CI - Load Library"
+			],
+			[
+				"impre",
+				"impreso"
+			],
+			[
+				"Set",
+				"SetFillColor"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"DE",
+				"DESC"
+			],
+			[
+				"cds",
+				"cdsSICE"
+			],
+			[
+				"iud",
+				"iudSICE"
+			],
+			[
+				"CDS",
+				"cdsSICE"
+			],
+			[
+				"idEs",
+				"idEstructura"
+			],
+			[
+				"estr",
+				"estructura"
+			],
+			[
+				"es",
+				"estructuras_model"
+			],
+			[
+				"id",
+				"idIniciador"
+			],
+			[
+				"parse",
+				"parseJSON"
+			],
+			[
+				"idAct",
+				"idActuacionEstado"
+			],
+			[
+				"actuac",
+				"actuacion"
+			],
+			[
+				"actu",
+				"actuacion"
+			],
+			[
+				"actuacio",
+				"actuacion"
+			],
+			[
+				"is_nu",
+				"is_natural_no_zero"
+			],
+			[
+				"fecha",
+				"fechaCreacionActuacion"
+			],
+			[
+				"Get",
+				"GetDateFromISO"
+			],
+			[
+				"GetDa",
+				"GetDateTimeFromFrenchToISO"
+			],
+			[
+				"fomu",
+				"formulario"
+			],
+			[
+				"corre",
+				"corresponde"
+			],
+			[
+				"perio",
+				"periodo"
+			],
+			[
+				"per",
+				"periodo"
+			],
+			[
+				"numero",
+				"numero"
+			],
+			[
+				"cara",
+				"caratula"
+			],
+			[
+				"key",
+				"keys"
+			],
+			[
+				"ke",
+				"keys"
+			],
+			[
+				"carat",
+				"caratulaActuacion"
+			],
+			[
+				"op",
+				"opcion"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"idActu",
+				"idActuacionTipo"
+			],
+			[
+				"fech",
+				"fechaDesde"
+			],
+			[
+				"numeri",
+				"numeroSICE"
+			],
+			[
+				"cons",
+				"consulta"
+			],
+			[
+				"load_",
+				"load_helper	CI - Load Helper File"
+			],
+			[
+				"ht",
+				"html	html"
+			],
+			[
+				"idPa",
+				"idPase"
+			],
+			[
+				"iudRemitente",
+				"iudRemitenteActuacion"
+			],
+			[
+				"idRemite",
+				"idRemitenteActuacion"
+			],
+			[
+				"read",
+				"readonly"
+			],
+			[
+				"idMesa",
+				"idMesaUsuario"
+			],
+			[
+				"inId",
+				"inIdAgente"
+			],
+			[
+				"estructu",
+				"estructuras"
+			],
+			[
+				"idEstructura",
+				"idEstructuraActual"
+			],
+			[
+				"set",
+				"set_value"
+			],
+			[
+				"idc",
+				"idActuacion"
+			],
+			[
+				"idUsuario",
+				"idUsuarioRecepcion"
+			],
+			[
+				"Recec",
+				"recepcion"
+			],
+			[
+				"idUsu",
+				"idUsuarioOrigen"
+			],
+			[
+				"idPase",
+				"idPaseEstado"
+			],
+			[
+				"observac",
+				"observacionActuacionPase"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"idEstruct",
+				"idEstructuraDestino"
+			],
+			[
+				"data",
+				"dataUsr"
+			],
+			[
+				"sess",
+				"session_userdata	CI - Session - Retrieving Session Data"
+			],
+			[
+				"mesas",
+				"sigep_mesas_usuarios"
+			],
+			[
+				"bacr",
+				"background"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/controllers/admin.php",
+			"settings":
+			{
+				"buffer_size": 1458,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/themes/base/admin/dashboard.php",
+			"settings":
+			{
+				"buffer_size": 4467,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/libraries/hits/pdf.php",
+			"settings":
+			{
+				"buffer_size": 5594,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/libraries/hits/jpgraph.php",
+			"settings":
+			{
+				"buffer_size": 659,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/third_party/jpgraph/src/jpgraph.php",
+			"settings":
+			{
+				"buffer_size": 204582,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/third_party/jpgraph/src/jpgraph_ttf.inc.php",
+			"settings":
+			{
+				"buffer_size": 21554,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/models/sigep/licencias_model.php",
+			"settings":
+			{
+				"buffer_size": 5723,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"fetc",
+				"Fetch: File"
+			],
+			[
+				"fet",
+				"Fetch: File"
+			],
+			[
+				"snippet: ht",
+				"Snippet: html"
+			],
+			[
+				"html",
+				"Set Syntax: HTML5"
+			],
+			[
+				"Snippet:",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"Snippet: html",
+				"Snippet: html"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git:init",
+				"Git: Init"
+			],
+			[
+				"gi",
+				"Git: Init"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/unilever/application/libraries/hits/jpgraph.php",
+		"/C/xampp/htdocs/personal/application/libraries/hits/Ext_Calendar.php",
+		"/C/xampp/htdocs/personal/application/controllers/administrador/licencias.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/reportes/parte.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/licencias/listado.php",
+		"/C/xampp/htdocs/personal/application/models/sigep/agentes_model.php",
+		"/C/xampp/htdocs/personal/application/models/sigep/licencias_model.php",
+		"/C/xampp/htdocs/personal/application/controllers/administrador/feriados.php",
+		"/C/xampp/htdocs/personal/application/config/navigation.php",
+		"/C/xampp/htdocs/personal/application/models/sigep/feriados_model.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/feriados/formulario.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/feriados/principal.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/licencias/formulario.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/feriados/listado.php",
+		"/C/xampp/htdocs/personal/application/language/es/calendar_lang.php",
+		"/C/xampp/htdocs/personal/application/libraries/hits/Ext_Date.php",
+		"/C/xampp/htdocs/personal/application/controllers/admin.php",
+		"/C/xampp/htdocs/personal/application/controllers/administrador/novedades.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/dashboard.php",
+		"/C/xampp/htdocs/personal/assets/themes/base/css/personal.css",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/licencias/principal.php",
+		"/C/xampp/htdocs/personal/application/controllers/administrador/agentes.php",
+		"/E/TPG_20141027/KMSpico.10.0.1.FINAL.Heldigard/KMSpico Portable/ReadMe KMSpico Portable.txt",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/login.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/agentes/principal.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/agentes/listado.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/agentes/formulario.php",
+		"/C/xampp/htdocs/personal/application/models/admin/personas_model.php",
+		"/C/xampp/htdocs/personal/assets/themes/base/css/login.css",
+		"/C/xampp/htdocs/personal/application/controllers/administrador/antecedentes.php",
+		"/C/xampp/htdocs/personal/application/libraries/Ext_Pagination.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/agentes/baja.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/template.php",
+		"/C/xampp/htdocs/personal/application/helpers/navigation_helper.php",
+		"/C/xampp/htdocs/personal/assets/themes/base/css/hits.css",
+		"/C/xampp/htdocs/personal/application/controllers/administrador/auth.php",
+		"/C/xampp/htdocs/personal/application/config/config.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/admin/agentes/dashboard.php",
+		"/C/xampp/htdocs/personal/application/views/themes/base/template.php",
+		"/C/xampp/htdocs/personal/application/libraries/hits/gridview.php",
+		"/C/xampp/htdocs/personal/application/libraries/hits/messages.php",
+		"/C/xampp/htdocs/personal/application/config/ext_config.php",
+		"/C/xampp/htdocs/personal/application/controllers/administrador/eventos.php",
+		"/C/xampp/htdocs/personal/system/libraries/Pagination.php",
+		"/C/xampp/htdocs/petshop/application/views/paginas/quienes_somos.php",
+		"/C/xampp/htdocs/petshop/application/views/paginas/veterinario.php",
+		"/C/xampp/htdocs/petshop/assets/css/styles2.css",
+		"/C/xampp/htdocs/petshop/assets/js/select2-3.5.1/select2.css",
+		"/C/xampp/htdocs/petshop/application/views/paginas/template.php",
+		"/C/Users/informatica/AppData/Local/Temp/fz3temp-1/formulario.php",
+		"/C/xampp/htdocs/personal/application/controllers/administrador/actuaciones.php",
+		"/C/xampp/htdocs/actuaciones/system/libraries/Form_validation.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/actuaciones/externa.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/actuaciones/interna.php",
+		"/C/xampp/htdocs/actuaciones/application/controllers/administrador/actuaciones.php",
+		"/C/xampp/htdocs/actuaciones/system/helpers/form_helper.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/actuaciones/formulario.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/pases/completo.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/reportes/consulta.php",
+		"/C/xampp/htdocs/actuaciones/application/controllers/administrador/reportes.php",
+		"/C/xampp/htdocs/actuaciones/application/libraries/hits/pdf.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/actuaciones/historial.php",
+		"/C/xampp/htdocs/actuaciones/application/models/sigep/pases_model.php",
+		"/C/xampp/htdocs/actuaciones/index.php",
+		"/C/xampp/htdocs/actuaciones/application/libraries/hits/autenticacion.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/template.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/template.php",
+		"/C/xampp/htdocs/actuaciones/application/config/navigation.php",
+		"/C/xampp/htdocs/actuaciones/application/config/config.php",
+		"/C/xampp/htdocs/actuaciones/application/config/ext_config.php",
+		"/C/xampp/htdocs/unilever/database.sql",
+		"/C/xampp/htdocs/actuaciones/application/controllers/administrador/pases.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/mesa.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/login.php",
+		"/C/xampp/htdocs/actuaciones/assets/themes/base/css/hits.css",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/reportes/principal.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/actuaciones/panel.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/pases/formulario.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/pases/preformulario.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/pases/pendientes.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/pases/recepcion.php",
+		"/C/xampp/htdocs/actuaciones/application/libraries/Ext_Pagination.php",
+		"/C/xampp/htdocs/actuaciones/assets/themes/base/css/fid.css",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/pases/tramite.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/pases/ppendientes.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/pases/bandeja.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/actuaciones/principal.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/actuaciones/consulta.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/actuaciones/inscripcion.php",
+		"/C/xampp/htdocs/actuaciones/application/controllers/administrador/auth.php",
+		"/C/xampp/htdocs/actuaciones/application/models/admin/usuarios_model.php",
+		"/C/xampp/htdocs/actuaciones/application/config/routes.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/pases/comprobante.php",
+		"/C/xampp/htdocs/actuaciones/application/config/hits_tcpdf.php",
+		"/C/xampp/htdocs/actuaciones/application/config/tcpdf.php",
+		"/C/xampp/htdocs/actuaciones/application/config/autoload.php",
+		"/E/WhatsApp/BG-WhatsAppLog.txt",
+		"/E/WhatsApp/Hna.Martita.txt",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/pases/listado.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/eventos/formulario.php",
+		"/C/xampp/htdocs/actuaciones/application/core/Ext_Controller.php",
+		"/C/xampp/htdocs/actuaciones/application/libraries/Ext_ubicacion.php",
+		"/C/xampp/htdocs/actuaciones/application/models/sigep/usuariosorganismos_model.php",
+		"/C/xampp/htdocs/actuaciones/application/views/themes/base/admin/actuaciones/listado.php",
+		"/C/xampp/htdocs/actuaciones/application/controllers/administrador/capacitacion.php",
+		"/C/xampp/htdocs/actuaciones/application/controllers/index.html",
+		"/C/xampp/htdocs/petpor/css/styles.css",
+		"/C/xampp/htdocs/petpor/popup-perdido-encontrado.html",
+		"/C/xampp/htdocs/petpor/perdido.html",
+		"/C/xampp/htdocs/petpor/popup-perdido-activar-placa.html",
+		"/C/xampp/htdocs/petpor/css/popup-perdido-activar-placa.html",
+		"/C/xampp/htdocs/petpor/index.html",
+		"/C/xampp/htdocs/petpor/contacto.html",
+		"/C/xampp/htdocs/petpor/veterinario.html",
+		"/C/xampp/htdocs/petpor/peluqueria.html",
+		"/C/xampp/htdocs/petpor/popup-registro1.html",
+		"/C/Users/informatica/Desktop/sigep_cursos_materiales.sql",
+		"/C/Users/informatica/Desktop/micans.txt",
+		"/C/xampp/htdocs/petpor/popup-turno-asignado.html",
+		"/C/xampp/htdocs/petpor/popup-loveit1.html",
+		"/C/xampp/htdocs/petpor/cargar-cv2.php",
+		"/C/xampp/htdocs/petpor/prueba.php",
+		"/C/xampp/htdocs/petpor/cargar-cv.php",
+		"/C/xampp/sendmail/sendmail.ini",
+		"/C/xampp/htdocs/petpor/css/css/styles.css",
+		"/C/xampp/htdocs/petpor/PETPOR meemba webs",
+		"/C/xampp/htdocs/template/MultiLevelPushMenu/MultiLevelPushMenu/index3.html",
+		"/C/xampp/htdocs/template/index.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\personal\\application\\libraries",
+			"C:\\xampp\\htdocs\\mactuaciones",
+			"C:\\xampp\\htdocs\\sigep",
+			"<open folders>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"LIMIT",
+			"FF-LAST",
+			"color",
+			"echo",
+			"_ci",
+			"ci",
+			"drop",
+			"dropdo",
+			"eliminar",
+			"mostrar",
+			"hover",
+			"actuacion",
+			"navba",
+			"addControl",
+			"mostrar",
+			"eliminar",
+			"mostrar",
+			"hilite",
+			"do_message(",
+			"do_message",
+			"emptyTpl",
+			"_doEmpty",
+			"_wrapsInForm",
+			"_doEmpty",
+			"emptyTpl",
+			"encontraro",
+			"gridview",
+			"_wrapsInForm",
+			"form",
+			"search",
+			"grid",
+			"titulo",
+			"doFoot",
+			"foot",
+			"prev",
+			"set_limit1",
+			"do_link",
+			"$page_selected",
+			"active",
+			"$pagerName",
+			"uri",
+			"pagination",
+			"pager",
+			"page",
+			"CLIENT",
+			"post",
+			"client_pagination_controller",
+			"client_controller",
+			"set_client_pagination_controller",
+			"post",
+			"ic-post-to",
+			"$this->_pager",
+			"post",
+			"uri",
+			"lista",
+			"listado",
+			"uri_s",
+			"$base_page_num",
+			"page",
+			"titulo",
+			"bxslider-",
+			"bxslider-vete",
+			"bx-vete",
+			"espacio",
+			"h3",
+			"veterinario",
+			"amigo",
+			"contacto",
+			"h3",
+			"container-content",
+			"form-error",
+			"select2",
+			"encontrar",
+			"selectbox",
+			"select2",
+			"form",
+			"icono-titulo",
+			"container",
+			"breadc",
+			"color-n",
+			"breadcr",
+			"perdido",
+			"uri",
+			"addParm",
+			"uri",
+			"num_link",
+			"cur",
+			"prev_link",
+			"empty_first_element",
+			"num_tag_open",
+			"prev_tag_open",
+			"pager",
+			"´pager",
+			"prev_tag_open",
+			"next_tag_open",
+			"3",
+			"page",
+			"per_page",
+			"query",
+			"page",
+			"_set_client_pagination_controller",
+			"page",
+			"uri",
+			"pager",
+			"page",
+			"cur_tag_open",
+			"num_tag_open",
+			"li",
+			"caratula",
+			"guardar(",
+			"idIniciador",
+			"tipoAc",
+			"dropdo",
+			"$tipo",
+			"formulario(",
+			"footer",
+			"ci_ses",
+			"resulta",
+			"ubicacion",
+			"bandeja",
+			"botones",
+			"200PX",
+			"consulta",
+			"prefor",
+			"cant",
+			"footer",
+			"paginad",
+			"sidebar"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$aData['tipo']",
+			"autenticacion",
+			"');",
+			"','",
+			"folios",
+			"$band",
+			"5,",
+			"4,",
+			"155,",
+			"35,",
+			"160,",
+			"30,",
+			", 3,",
+			", 4,",
+			", 5,",
+			", 7,",
+			", 5,",
+			", 6,",
+			"',",
+			"','",
+			"autenticacion->",
+			"',",
+			"','",
+			"'"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/controllers/admin.php",
+					"settings":
+					{
+						"buffer_size": 1458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								581,
+								581
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/views/themes/base/admin/dashboard.php",
+					"settings":
+					{
+						"buffer_size": 4467,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1048,
+								1048
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/libraries/hits/pdf.php",
+					"settings":
+					{
+						"buffer_size": 5594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/libraries/hits/jpgraph.php",
+					"settings":
+					{
+						"buffer_size": 659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								567,
+								567
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/third_party/jpgraph/src/jpgraph.php",
+					"settings":
+					{
+						"buffer_size": 204582,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								157136,
+								157141
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 63999.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/third_party/jpgraph/src/jpgraph_ttf.inc.php",
+					"settings":
+					{
+						"buffer_size": 21554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1893,
+								1893
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 699.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "application/models/sigep/licencias_model.php",
+					"settings":
+					{
+						"buffer_size": 5723,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5450,
+								5450
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1440.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/xampp/htdocs/sigep/Sindicatura General de la Provincia.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 299.0,
+	"status_bar_visible": true
+}
