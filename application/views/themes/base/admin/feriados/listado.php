@@ -22,11 +22,16 @@ $vcMsjSrv = (!empty($vcMsjSrv))? $vcMsjSrv: '';
 <?=$vcMsjSrv?>
 <?=$vcGridView;?>
 <script type="text/javascript">
-	$('.eliminar').on('beforeSend.ic', function(event){
-		event.preventDefault();
-		bootbox.confirm("Are you sure?", function(result) {
+	$('.eliminar').on('beforeSend.ic', function(){
+		var test = confirm('seguro');
+		if(test) {
+			alert('continuar');
+		}
+		else {
+			alert('cancelaste');
+		}
+		/*bootbox.confirm("Are you sure?", function(result) {
 			//Example.show("Confirm result: "+result);
-		}); 
-		
+		}); */
     });
 </script>
