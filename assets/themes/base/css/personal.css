@@ -9,6 +9,9 @@
 .sidebar-imagen-perfil img {
 	width: 150px;
 }
+.registro {
+	cursor: cell;
+}
 figure.cumpleanos-agentes-hoy {
 	display: table-row;
 }

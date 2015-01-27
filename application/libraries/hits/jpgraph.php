@@ -16,4 +16,25 @@ class Jpgraph {
 		$grafico->Add($p1);
 		return $grafico->Stroke();
     }
+    function line($title='Bar Chart')
+    {
+    	require_once (APPPATH.'third_party/jpgraph/src/jpgraph_line.php');
+        require_once (APPPATH.'third_party/jpgraph/src/jpgraph_bar.php');
+        require_once (APPPATH.'third_party/jpgraph/src/jpgraph_mgraph.php');
+        $ydata = array(11,3,8,12,5,1,9,13,5,7);
+
+		// Create the graph. These two calls are always required
+		$graph = new Graph(350,250);
+		$graph->SetScale('textlin');
+
+		// Create the linear plot
+		$lineplot=new LinePlot($ydata);
+		$lineplot->SetColor('blue');
+
+		// Add the plot to the graph
+		$graph->Add($lineplot);
+
+		// Display the graph
+		return $graph->Stroke();
+    }
 } 

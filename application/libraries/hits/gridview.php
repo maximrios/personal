@@ -889,7 +889,9 @@ $(document).ready(function () {
                 $($(this).find('td')[col]).removeClass('hilite');
             });
         });
-
+        $('table#' + tableID + ' tr.registro').on('dblclick', function(){
+            alert('asdasd');
+        });
     });
 });
 //]]>

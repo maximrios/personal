@@ -40,8 +40,15 @@
                 <li><a href=""><span class="glyphicon glyphicon-bell"></span></a></li>
                 <!--<li class="navbar-imagen"><a href="#" class=""><img src="../assets/images/agentes/<?=$this->autenticacion->dniPersona()?>.jpg"></a></li>-->
                 <li class="dropdown">
-
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$this->autenticacion->apellidoPersona().', '.$this->autenticacion->nombrePersona();?> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle perfil" data-toggle="dropdown">
+                        <?php if(file_exists('assets/images/agentes/'.$this->autenticacion->dniPersona().'.jpg')) { ?>
+                            <img src="<?=base_url('assets/images/agentes/'.$this->autenticacion->dniPersona().'.jpg');?>" alt="">
+                        <?php } 
+                        else { ?>
+                            <img src="http://lorempixel.com/50/50">
+                        <?php } ?>
+                        <?=$this->autenticacion->apellidoPersona().', '.$this->autenticacion->nombrePersona();?> <b class="caret"></b>
+                    </a>
                     <ul class="dropdown-menu">
                         <li><a href="<?=site_url('administrador/auth/logout')?>"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;Cerrar Sesi&oacute;n</a></li>
                     </ul>

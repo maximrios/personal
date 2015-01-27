@@ -24,17 +24,20 @@ class Admin extends Ext_AutController {
 	}
 	public function ausentismo() {
 		$this->load->library('hits/Jpgraph', array(), 'jpgraph');
-		$x = $this->licencias->novedadesLicencias();
+		$licencias = $this->licencias->novedadesLicencias();
+		$licencias['cantidad'][] = 85;
+		$licencias['licencia'][] = 'Sin novedad';
 		$aData = array(
 			'titulo' => 'Ausentismo'
-			, 'x' => array_values($x['cantidad'])
-			, 'y' => array('Informatica', 'Economia', 'Filosofia')
+			, 'x' => array_values(implode(', ', $licencias['cantidad']))
+			, 'y' => array_values(implode(', ', $licencias['licencia']))
 			, 'w' => 310
 			, 'h' => 260
 		);
-		/*$x = array(12, 16, 34);
-		$y = array('Informatica', 'Economia', 'Filosofia');*/
-		$bar_graph = $this->jpgraph->pie($aData['x'], $aData['y'], $aData['w'], $aData['h'], $aData['titulo']);
+		$x = array(12, 16, 34);
+		$y = array('Informatica', 'Economia', 'Filosofia');
+		$bar_graph = $this->jpgraph->pie($x, $y, $aData['w'], $aData['h'], $aData['titulo']);
+		//$bar_graph = $this->jpgraph->line();
         echo $bar_graph;
 	}
 }

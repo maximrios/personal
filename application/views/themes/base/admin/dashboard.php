@@ -7,7 +7,15 @@
 }
 </style>
 <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Ausentismo</div>
+            <div class="panel-body panel-collapse jpgraph-content">
+                <img src="admin/ausentismo" class="jpgraph-pie">
+            </div>
+        </div>
+    </div>
+    <!--<div class="col-lg-4">
         <div class="panel panel-default">
             <div class="panel-heading">Ausentismo</div>
             <div class="panel-body panel-collapse jpgraph-content">
@@ -22,15 +30,7 @@
                 <img src="admin/ausentismo" class="jpgraph-pie">
             </div>
         </div>
-    </div>
-    <div class="col-lg-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">Ausentismo</div>
-            <div class="panel-body panel-collapse jpgraph-content">
-                <img src="admin/ausentismo" class="jpgraph-pie">
-            </div>
-        </div>
-    </div>
+    </div>-->
 </div>
 <div class="row">
 	<div class="col-lg-12">
