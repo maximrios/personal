@@ -20,7 +20,7 @@ class Agentes_model extends CI_Model {
         $sql = 'SELECT *
             FROM hits_personas p 
             INNER JOIN sigep_agentes a ON p.idPersona = a.idPersona
-            WHERE nombrePersona LIKE ? 
+            WHERE concat_ws(" ", apellidoPersona, nombrePersona) LIKE ? 
             ORDER BY apellidoPersona ASC  
             limit ? offset ? ;';
         return $this->db->query($sql, array('%' . strtolower((string) $vcBuscar) . '%', (double) $offset, (double) $limit))->result_array();

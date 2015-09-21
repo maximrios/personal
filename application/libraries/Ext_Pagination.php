@@ -265,9 +265,7 @@ return '';
 }
 
 $select = form_dropdown('per_page', $options, $this->per_page, 'id="" class="form-control per-page-gridview" width="10px" ic-post-to="'.$this->base_url.'" ic-target="#main_content" ic-trigger-on="change"');
-
 $vcXHtml = '<div class="center-block hidden-sm hidden-md"><span class="item-contenedor">Mostrar: </span>'.$select.'</div>';
-
 return $vcXHtml;
 }
 

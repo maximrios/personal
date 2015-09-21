@@ -12,6 +12,11 @@
 .registro {
 	cursor: cell;
 }
+.listado {
+	list-style: none;
+	margin-left: 0!important;
+	padding-left: 0!important;
+}
 figure.cumpleanos-agentes-hoy {
 	display: table-row;
 }
@@ -34,4 +39,127 @@ figure.cumpleanos-agentes-hoy figcaption {
 figure.cumpleanos-agentes-hoy figcaption span {
 	display: block;
 	font-size: 0.9em;
+}
+
+/**
+ * Estilos para el panel ficha personal de agente
+ */
+figure.info-agente {
+	display: table-row;
+}
+figure.info-agente .image-agente {
+	border: 1px solid #d9d9d9;
+	display: table-cell;
+	padding: 3px;
+	height: 100px;
+	vertical-align: middle;
+	width: 100px;
+}
+figure.info-agente .imagen-agente img {
+	width: 100%;
+}
+figure.info-agente figcaption {
+	display: table-cell;
+	padding-left: 20px;
+	vertical-align: top;
+}
+figure.info-agente figcaption ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+figure.info-agente figcaption span {
+	display: block;
+	font-size: 0.9em;
+}
+/**
+ * Estilos para los tabs de agente
+ */
+#tabs {
+  	list-style: none;
+  	margin: 0;
+  	overflow: hidden;
+  	padding: 0;
+  	width: 100%;
+}
+#tabs li {
+  float: right;
+}
+#tabs a {
+  	
+    color: #FFFFFF;
+  	border-top-left-radius: 5px;
+  	border-top-right-radius: 5px;
+  	font-size: 14px;
+    /*background-image: linear-gradient(to bottom, #fff, #ddd);*/
+    height: 37px;
+  	padding: 8px 20px;
+  	float: left;
+  	text-decoration: none;
+  	border: 1px solid #ddd;
+  	border-bottom: none;
+    position: relative;
+  	/*border-radius: 5px 0 0 0;
+  	box-shadow: 0 2px 2px rgba(0,0,0,.4);*/
+}
+#tabs a:hover,
+#tabs a:hover::after,
+#tabs a:focus,
+#tabs a:focus::after {
+  	/*background: #fff;*/
+}
+#tabs a:focus {
+	outline: 0;
+}
+/*#tabs a::after {
+  content:'';
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  right: -.5em;
+  bottom: 0;
+  width: 1em;
+  background: #ddd;
+  background-image: linear-gradient(to bottom, #fff, #ddd);
+  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  transform: skew(10deg);
+  border-radius: 0 5px 0 0;
+}*/
+ 
+#tabs #current a,
+#tabs #current a::after{
+    width: 150px;
+    z-index: 3;
+}
+.color-rosado {
+  background: #de7191!important;
+}
+.color-azul {
+    background: #5d6186!important;
+}
+.color-turquesa {
+    background: #7ad5da;
+}
+.color-celeste {
+    background: #59b9e3;
+}
+.color-verde {
+    background: #68cbb6;
+}
+#content
+{
+    background: #fff;
+    padding: 20px 5px;
+    height: 220px;
+    position: relative;
+    z-index: 2;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+}
+/**
+ * Estilos para licencias
+ */
+.listado-licencias {
+	list-style: none;
+	padding-left: 0;
 }

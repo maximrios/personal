@@ -9,8 +9,13 @@ Class Usuarios_model extends CI_Model {
             , $vcPass
             , $vcIp
         );
-        $query = 'SELECT idUsuario, idPersona, idRol, idEstado, nombreUsuario, passwordUsuario, intentosUsuario, ultimoLoginUsuario, nombreRol, nombreEstado, dniPersona, apellidoPersona, nombrePersona, idAgente
-            FROM hits_view_login
+        $query = 'SELECT u.idUsuario, u.idPersona, r.idRol, u.idEstado, u.nombreUsuario, u.passwordUsuario, u.intentosUsuario, u.ultimoLoginUsuario, r.nombreRol, ue.nombreEstado, p.dniPersona, p.apellidoPersona, p.nombrePersona, a.idAgente
+            FROM hits_usuarios u
+            INNER JOIN hits_usuarios_roles ur ON ur.idUsuario = u.idUsuario
+            INNER JOIN hits_roles r ON r.idRol = ur.idRol
+            INNER JOIN hits_usuarios_estados ue ON ue.idEstado = u.idEstado
+            INNER JOIN hits_personas p ON p.idPersona = u.idPersona
+            INNER JOIN sigep_agentes a ON a.idPersona = p.idPersona
             WHERE nombreUsuario = ? AND passwordUsuario = ?;';
         $result = $this->db->query($query, $aParms)->result_array();
         return (sizeof($result) > 0) ? $result[0] : false;
@@ -87,8 +92,13 @@ Class Usuarios_model extends CI_Model {
         return $result[0]['result'];
     }
 
-    public function cambiarPassword($aParms) {
-        $sql = 'SELECT hits_sp_usuarios_password(? ,? ,?) as result;';
+    public function getUserByIdPassword($idUsuario, $passwordUsuario) {
+        $sql = 'SELECT * FROM hits_usuarios WHERE idUsuario = ? AND passwordUsuario = ? ';
+        $result = $this->db->query($sql, array((int) $idUsuario, (string) $passwordUsuario))->result_array();
+        return array_shift($result);
+    }
+    public function setPassword($aParms) {
+        $sql = 'UPDATE hits_usuarios SET passwordUsuario = ? WHERE idUsuario = ?';
         $result = $this->db->query($sql, $aParms)->result_array();
         echo $this->db->last_query();
         return $result[0]['result'];

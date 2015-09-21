@@ -3,64 +3,15 @@
 	$vcMsjSrv = (!empty($vcMsjSrv))? $vcMsjSrv: '';
 	$vcFrmAction = (!empty($vcFrmAction))? $vcFrmAction: '';
 ?>
-<style type="text/css">
-.imagen {
-	min-height: 205px;
-	margin-bottom: 0;
-	text-align: center;
-}
-.buttons button {
-	margin: 0.5em;
-}
-.fileUpload {
-	position: relative;
-	overflow: hidden;
-	margin: 10px;
-}
-.fileUpload input.upload {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 0;
-	padding: 0;
-	font-size: 20px;
-	cursor: pointer;
-	opacity: 0;
-	filter: alpha(opacity=0);
-}
-.form-image {
-	position: absolute;
-	top: 30px;
-	right: 15px;
-}
-</style>
 <div class="forms">
 	<?php echo $vcMsjSrv; ?>
-	<form id="<?= $vcFormName; ?>" name="<?= $vcFormName; ?>" ic-post-to="<?=$vcFrmAction;?>" ic-target="<?=$target?>">
+	<form id="<?= $vcFormName; ?>" name="<?= $vcFormName; ?>" ic-post-to="<?=$vcFrmAction;?>" ic-target="#main_content">
 		<div class="row">
 			<div class="form-group col-md-6 col-lg-8">
 				<label for="dniPersona">Documento</label>
 				<input type="text" id="dniPersona" name="dniPersona" tabindex="1" placeholder="Numero de documento. Sin puntos." value="<?php echo $Reg['dniPersona']?>" required class="form-control">
 			</div>
 		</div>
-		<!--<div class="form-group col-xs-hidden col-md-6 col-lg-4 pull-right form-image">
-			<div class="panel panel-default imagen">
-                <div class="panel-heading">Imagen de perfil</div>
-                <div class="panel-body">
-                	<?php if ($Reg['pathPersona']) { ?>
-                		<img src="<?=$Reg['pathPersona']?>">
-                	<?php } 
-                	else { ?>
-                		<input id="uploadFile" placeholder="Choose File" disabled="disabled" />
-						<div class="fileUpload btn btn-primary">
-    						<span>Cargar Imagen</span>
-    						<input id="uploadBtn" type="file" class="upload" />
-						</div>
-                	<?php } ?>
-        			
-                </div>
-        	</div>
-    	</div>-->
     	<div class="row">
 			<div class="form-group col-md-6 col-lg-4 ">
 				<label for="nombrePersona">Nombre</label>
@@ -109,7 +60,7 @@
 		<div class="row">
 			<div class="form-group col-lg-3">
 				<label for="telefonoPersona">Telefono Fijo</label>
-				<input type="text" id="telefonoPersona" name="telefonoPersona" tabindex="10" placeholder="Telefono del Agente" value="<?php echo $Reg['telefonoPersona'];?>" class="form-control">
+				<input type="text" id="telefonoPersona" name="telefonoPersona" tabindex="10" placeholder="Telefono del Agente" value="<?php echo $Reg['telefonoPersona'];?>" required class="form-control">
 			</div>
 			<div class="form-group col-lg-3">
 				<label for="celularPersona">Telefono Celular</label>
@@ -117,7 +68,7 @@
 			</div>
 			<div class="form-group col-lg-6">
 				<label for="emailPersona">Correo Electrónico</label>
-				<input type="text" id="emailPersona" name="emailPersona" tabindex="12" placeholder="Correo electrónico oficial" value="<?php echo $Reg['emailPersona'];?>" class="form-control">
+				<input type="text" id="emailPersona" name="emailPersona" tabindex="12" placeholder="Correo electrónico oficial" value="<?php echo $Reg['emailPersona'];?>" required class="form-control">
 			</div>
 		</div>
 		<div class="row">

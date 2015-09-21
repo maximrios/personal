@@ -9,7 +9,6 @@ $vcNombreList = (!empty($vcNombreList))? $vcNombreList: 'Agentes';
 $vcMsjSrv = (!empty($vcMsjSrv))? $vcMsjSrv: '';
 ?>
 <div class="row">
-	<a href="agentes/reporte" target="_blank" class="btn btn-danger pull-left">Imprimir listado completo</a>
 	<form id="form-search-gridview" name="form-search-gridview" ic-post-to="agentes/listado" ic-target="#main_content">
 		<div class="input-group search-gridview pull-right">
 	    	<input type="text" id="buscarGridview" name="buscarGridview" class="form-control" placeholder="Buscar..." value="<?=$txtvcBuscar?>" autofocus>
@@ -17,7 +16,7 @@ $vcMsjSrv = (!empty($vcMsjSrv))? $vcMsjSrv: '';
 		    	<button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
 	    	</span>
 		</div>
-		<a href="#" ic-post-to="personas/formulario" ic-target="#main_content" class="btn btn-primary pull-right">Agregar nuevo agente</a>
+		<a href="#" ic-post-to="agentes/formulario" ic-target="#main_content" class="btn btn-primary pull-right">Agregar nuevo agente</a>
 	</form>	
 </div>
 <?=$vcMsjSrv?>

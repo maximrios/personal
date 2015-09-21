@@ -112,6 +112,7 @@ class Licencias extends Ext_crud_Controller {
                 , 'txtvcBuscar' => $vcBuscar
                 , 'estructura' => $this->input->post('idEstructura')
                 , 'cargo' => $this->input->post('idCargo')
+                , 'licencias' => $this->licencias->obtenerLicencias()
             )
         );
     }
@@ -124,6 +125,9 @@ class Licencias extends Ext_crud_Controller {
         $aData['vcMsjSrv'] = $this->_aEstadoOper['message'];
         $aData['vcAccion'] = ($this->_reg['idAgente'] > 0) ? 'Modificar' : 'Agregar';
         $this->load->view('administrator/sigep/agentes/buscador', $aData);
+    }
+    function agente($idAgente) {
+        $this->load->view('admin/licencias/agente', array());
     }
     function formulario($agente=null) {
         if($agente) {

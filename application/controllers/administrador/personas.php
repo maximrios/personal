@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Agentes extends Ext_crud_Controller {
+class Personas extends Ext_crud_Controller {
     function __construct() {
         parent::__construct();
         $this->load->library('hits/gridview');
@@ -87,56 +87,12 @@ class Agentes extends Ext_crud_Controller {
                 'label' => 'Correo electronico de la Persona',
                 'rules' => 'trim|xss_clean|valid_email'
             )
-            /*,array(
-                'field'   => 'ingresoAgenteAPP',
-                'label'   => 'Fecha de ingreso a la APP',
-                'rules'   => 'trim|xss_clean|required'
-            )
-            ,array(
-                'field'   => 'ingresoAgenteSIGEP',
-                'label'   => 'Fecha de ingreso a la SIGEP',
-                'rules'   => 'trim|xss_clean|required'
-            )*/
             ,array(
                 'field'   => 'internoAgente',
                 'label'   => 'Numero de interno',
                 'rules'   => 'trim|xss_clean'
             )
         );
-        $this->_aReglasBaja = array(
-            array(
-                'field'   => 'idMotivoAntecedente',
-                'label'   => 'Motivo de antecedente',
-                'rules'   => 'trim|xss_clean'
-            )
-            ,array(
-                'field'   => 'idAgente',
-                'label'   => 'Agente',
-                'rules'   => 'trim|xss_clean|required'
-            )
-            ,array(
-                'field'   => 'desdeMotivoAntecedente',
-                'label'   => 'Fecha desde antecedente',
-                'rules'   => 'trim|xss_clean|required'
-            )
-            ,array(
-                'field'   => 'hastaMotivoAntecedente',
-                'label'   => 'Fecha hasta antecedente',
-                'rules'   => 'trim|xss_clean|required'
-            )
-            ,array(
-                'field'   => 'observacionesMotivoAntecedente',
-                'label'   => 'Fecha hasta antecedente',
-                'rules'   => 'trim|xss_clean|required'
-            )
-        );
-        /*$this->_aBuscar = array(
-            array(
-                'field'   => 'vcBuscar',
-                'label'   => 'Buscar por texto',
-                'rules'   => 'trim|required|xss_clean|min_length[3]|max_length[50]|callback_onlySearch'
-            )
-        );*/
     }
     protected function _inicReg($boIsPostBack=false) {
         $this->_reg = array(
@@ -194,74 +150,15 @@ class Agentes extends Ext_crud_Controller {
         }
         return $this->_reg;
     }
-    protected function _inicRegBaja($boIsPostBack=false) {
-        $this->_reg = array(
-            'idMotivoAntecedente' => null
-            , 'desdeMotivoAntecedente' => null
-            , 'hastaMotivoAntecedente' => null
-            , 'observacionesMotivoAntecedente' => null
-            , 'dniPersona' => null
-            , 'nombrePersona' => null
-            , 'apellidoPersona' => null
-            , 'idAgente' => null
-        );
-        $id = ($this->input->post('idAgente')!==false)? $this->input->post('idAgente'):0;
-        if($id!=0 && !$boIsPostBack) {
-            $this->_reg = $this->agentes->obtenerUno($id);
-            $this->_reg['nacimientoPersona'] = GetDateFromISO($this->_reg['nacimientoPersona'], FALSE);
-            $this->_reg['ingresoAgenteAPP'] = GetDateFromISO($this->_reg['ingresoAgenteAPP'], FALSE);
-            $this->_reg['ingresoAgenteSIGEP'] = GetDateFromISO($this->_reg['ingresoAgenteSIGEP'], FALSE);
-        } 
-        else {
-            $this->_reg = array(
-                'idPersona' => set_value('idPersona')
-                ,'idTipoDni' => set_value('idTipoDni')
-                , 'dniPersona' => set_value('dniPersona')
-                , 'apellidoPersona' => set_value('apellidoPersona')
-                , 'nombrePersona' => set_value('nombrePersona')
-                , 'cuilPersona' => set_value('cuilPersona')
-                , 'nacimientoPersona' => set_value('nacimientoPersona')
-                , 'idSexo' => set_value('idSexo')
-                , 'idEcivil' => set_value('idEcivil')
-                , 'nacionalidadPersona' => set_value('nacionalidadPersona')
-                , 'domicilioPersona' => set_value('domicilioPersona')
-                , 'telefonoPersona' => set_value('telefonoPersona')
-                , 'celularPersona' => set_value('celularPersona')
-                , 'emailPersona' => set_value('emailPersona')
-                , 'laboralPersona' => set_value('laboralPersona')
-                , 'pathPersona' => set_value('pathPersona')
-                , 'idAgente' => $id
-                , 'ingresoAgenteAPP' => set_value('ingresoAgenteAPP')
-                , 'ingresoAgenteSIGEP' => set_value('ingresoAgenteSIGEP')
-                , 'internoAgente' => set_value('internoAgente')
-            );          
-        }
-        return $this->_reg;
-    }
     protected function _inicReglas() {
         $val = $this->form_validation->set_rules($this->_aReglas);
-    }
-    protected function _inicReglasBaja() {
-        $val = $this->form_validation->set_rules($this->_aReglasBaja);
     }
     function index() {
         $this->_content = $this->load->view('admin/agentes/principal', array(), true);
         $this->_menu = menu_ul('agentes');
         parent::index();
     }
-    function dashboard() {
-        $this->_content = $this->load->view('admin/agentes/dashboard', array(), true);
-        $this->_menu = menu_ul('inicio');
-        parent::index();
-    }
-    function perfil() {
-        $this->_content = $this->load->view('admin/agentes/perfil', array(), true);
-        $this->_menu = menu_ul('perfil');
-        parent::index();
-    }
     public function listado($idAgente = 0) {
-        //$estructuras = $this->estructura->dropdownEstructuras();
-        //$cargos = $this->cargo->dropdownCargosFiltro();
         $vcBuscar = ($this->input->post('buscarGridview') === FALSE) ? '' : $this->input->post('buscarGridview');
         $filtro = ($vcBuscar)? ': "'.$vcBuscar.'" | <a href="agentes">ver todos</a>':'';
         $this->gridview->initialize(
@@ -315,20 +212,11 @@ class Agentes extends Ext_crud_Controller {
             )
         );
     }
-    function situacion() {
-        $this->load->view('admin/agentes/situacion', array());
-    }
-    function buscador() {
-        $aData['Reg'] = $this->_inicReg($this->input->post('vcForm'));
-        $aData['vcFrmAction'] = 'administrator/agentes/guardar';
-        $aData['vcMsjSrv'] = $this->_aEstadoOper['message'];
-        $aData['vcAccion'] = ($this->_reg['idAgente'] > 0) ? 'Modificar' : 'Agregar';
-        $this->load->view('administrator/sigep/agentes/buscador', $aData);
-    }
     function formulario($agente=null) {
         if($agente) {
             $aData['Reg'] = $this->agentes->obtenerUno($agente);
             $aData['Reg']['nacimientoPersona'] = GetDateFromISO($aData['Reg']['nacimientoPersona']);
+            //$aData['Reg']['fechaHastaEvento'] = GetDateFromISO($aData['Reg']['fechaHastaEvento']);
         }
         else {
             $aData['Reg'] = $this->_inicReg($this->input->post('vcForm'));    
@@ -336,10 +224,9 @@ class Agentes extends Ext_crud_Controller {
 
         $aData['estados'] = $this->estados;
         $aData['sexos'] = $this->sexos;
-        $aData['target'] = ($this->session->userdata('idAgente'))? '#tabs-content':'#main_content';
-        $aData['vcFrmAction'] = 'agentes/guardar';
+        $aData['vcFrmAction'] = 'personas/guardar';
         $aData['vcMsjSrv'] = $this->_aEstadoOper['message'];
-        $this->load->view('admin/agentes/formulario', $aData);
+        $this->load->view('admin/personas/formulario', $aData);
     }
     function guardar() {
         antibotCompararLlave($this->input->post('vcForm'));
@@ -369,7 +256,7 @@ class Agentes extends Ext_crud_Controller {
                 )
             );
             if($this->_aEstadoOper['status'] > 0) {
-                $this->_aEstadoOper['message'] = 'Se actualizaron los datos correctamente.';
+                $this->_aEstadoOper['message'] = 'El registro fue guardado correctamente.';
             } 
             else {
                 $this->_aEstadoOper['message'] = $this->_obtenerMensajeErrorDB($this->_aEstadoOper['status']);
@@ -381,35 +268,10 @@ class Agentes extends Ext_crud_Controller {
         }
         //Lo que sigue a continuacion deberia de ir dentro de un if que controle las validaciones
         $this->_aEstadoOper['message'] = $this->messages->do_message(array('message' => $this->_aEstadoOper['message'], 'type' => ($this->_aEstadoOper['status'] > 0) ? 'success' : 'danger'));
-        $this->formulario($this->session->userdata('idAgente'));
-    }
-    function buscar() {
-        $registro = $this->_inicReg(false);
-        
-        if($this->input->post('buscar_persona')) {
-
-        }
-        else {
-            redirect('administrator/home');
-        }
-    }
-    function panel($idAgente) {
-        $this->session->set_userdata('idAgente', $idAgente);
-        $aData['agente'] = $this->agentes->obtenerUno($idAgente);
-        $this->load->view('admin/agentes/panel', $aData);
-    }
-    function baja($agente=false) {
-        if($agente) {
-            $aData['Reg'] = $this->agentes->obtenerUno($agente);
-            $aData['Reg']['nacimientoPersona'] = GetDateFromISO($aData['Reg']['nacimientoPersona']);
-            $aData['motivos'] = $this->agentes->dropdownAgentesAntecedentes();
-            $aData['sexos'] = $this->sexos;
-            $aData['vcFrmAction'] = 'agentes/eliminar';
-            $aData['vcMsjSrv'] = $this->_aEstadoOper['message'];
-            $this->load->view('admin/agentes/baja', $aData);
-        }
-        else {
-            $this->listado();
+        if($this->_aEstadoOper['status'] > 0) {
+            redirect('administrador/agentes/listado');
+        } else {
+            $this->formulario();
         }
     }
     function eliminar() {
@@ -447,36 +309,6 @@ class Agentes extends Ext_crud_Controller {
         }
         $this->_aEstadoOper['message'] = $this->messages->do_message(array('message' => $this->_aEstadoOper['message'], 'type' => ($this->_aEstadoOper['status'] > 0) ? 'success' : 'danger'));
         $this->listado();
-    }
-    function exportar() {
-        $this->load->library('hits/export', array(), 'export');
-        $this->_rsRegs = $this->agente->obtener('', $this->input->post('idEstructura'), $this->input->post('idCargo'), 0, 999);
-        print_r($this->_rsRegs);
-        //$this->export->to_excel($this->_rsRegs, 'nameForFile1'); 
-    }
-    function planilla() {
-        $this->config->set_item('page_orientation', 'L');
-        $this->config->set_item('page_format', 'A4');
-        $this->config->set_item('header_on', FALSE);
-        $aData['agentes'] = $this->agente->obtener('');
-        $this->load->view('administrator/sigep/agentes/plantilla', $aData);
-    }
-    function plantilla($idAgente) {
-        $this->config->set_item('page_orientation', 'L');
-        $this->config->set_item('page_format', 'A4');
-        $this->config->set_item('header_on', FALSE);
-        $aData['agentes'][] = $this->agente->obtenerUno($idAgente);
-        if($aData['agentes']) {
-            //$aData['cuadrocargosagentes'] = $this->cuadrocargosagentes->obtenerCuadroCargoAgente($idAgente);
-        }
-        $this->load->view('administrator/sigep/agentes/plantilla', $aData);
-    }
-    function reporte() {
-        $this->config->set_item('page_orientation', 'P');
-        $this->config->set_item('page_format', 'A4');
-        $this->config->set_item('header_on', FALSE);
-        $aData['agentes'] = $this->agentes->obtener();
-        $this->load->view('admin/reportes/agentes', $aData);
     }
     public function _dni_unico($nombre) {
         if($this->input->post('idPersona') == 0) {

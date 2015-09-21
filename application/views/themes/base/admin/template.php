@@ -22,7 +22,7 @@
     <script type="text/javascript" src="<?=config_item('ext_theme_folder')?>js/bootstrap-datetimepicker.es.js"></script>
     <script type="text/javascript" src="<?=config_item('ext_theme_folder')?>dropzone/dropzone.js"></script>
     <script type="text/javascript" src="<?=config_item('ext_theme_folder')?>js/bootbox.js"></script>
-    
+    <script type="text/javascript" src="<?=config_item('ext_theme_folder')?>js/jquery.easytabs.min.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -50,6 +50,8 @@
                         <?=$this->autenticacion->apellidoPersona().', '.$this->autenticacion->nombrePersona();?> <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
+                        <li><a href="<?=site_url('administrador/usuarios/resetpassword')?>"><span class="glyphicon glyphicon-lock"></span>&nbsp;&nbsp;Cambiar Password</a></li>
+                        <li class="divider"></li>
                         <li><a href="<?=site_url('administrador/auth/logout')?>"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;Cerrar Sesi&oacute;n</a></li>
                     </ul>
                 </li>

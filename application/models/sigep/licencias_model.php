@@ -24,7 +24,6 @@ class Licencias_model extends CI_Model {
                 limit ? offset ? ;';
         return $this->db->query($sql, array('%' . strtolower((string) $vcBuscar) . '%', (double) $offset, (double) $limit))->result_array();
     }
-
     public function numRegs($vcBuscar) {
         $sql = 'SELECT count(idAgenteLicencia) AS inCant
                 FROM sigep_view_agentes a
@@ -95,7 +94,7 @@ class Licencias_model extends CI_Model {
     **/
     public function obtenerLicencias($vcBuscar = '', $limit = 0, $offset = 9999999) {
         $sql = 'SELECT *
-            FROM sigep_view_licencias
+            FROM sigep_licencias
             WHERE nombreLicencia LIKE ? 
             limit ? offset ? ;';
         return $this->db->query($sql, array('%' . strtolower((string) $vcBuscar) . '%', (double) $offset, (double) $limit))->result_array();

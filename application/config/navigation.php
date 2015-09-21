@@ -6,6 +6,12 @@ $config['navigation'] = array(
         'link'   => 'admin',
         'icon'   => 'file'
     ),
+    'perfil' => array(
+        'id'     => 'perfil',
+        'title'  => 'Mi perfil',
+        'link'   => 'administrador/perfil',
+        'icon'   => 'user'
+    ),
     'bandeja' => array(
         'id'     => 'agentes',
         'title'  => 'Agentes',
@@ -27,7 +33,7 @@ $config['navigation'] = array(
     'auditorias' => array(
         'id'     => 'auditorias',
         'title'  => 'Auditorias',
-        'link'   => '',
+        'link'   => 'administrador/agentes/panel',
         'icon'   => 'briefcase'
     ),
     'estructuras' => array(

@@ -1,4 +1,5 @@
 <?php
+	$route['administrador/perfil'] = "administrador/agentes/perfil";
 	$route['fundacion'] = "inicio/fundacion";
 	//$route['noticias'] = "inicio/noticias";
 	$route['programa/(:num)/(:any)'] = 'programas/programa/$1';
